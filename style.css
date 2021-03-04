@@ -2,6 +2,9 @@ body
 {
     font-family: 'Nanum Gothic', nanum;
 }
+ul, li {
+    list-style-type: none;
+}
 .container
 {
     width: 90%;
