@@ -20,7 +20,7 @@ body
 .question
 {
     height: 3em;
-    font-size: 50%;
+    font-size-adjust: auto;
     line-height: 3em;
     text-align: center;
 }
@@ -37,10 +37,9 @@ body
 .row .text
 { 
     margin: auto;
-    height : 8em;
-    line-height: 8em;
-    width:auto;
-    margin: auto;
+    display: inline;
+    text-align: justify;
+    font-size-adjust: auto;
 } 
 .row .choice:focus, .row .choice:active
 {
