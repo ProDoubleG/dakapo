@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <title>나에게 맞는 악기를 알아보자!</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-    
-
-</style>
 
 <body>
 
 <script>
-    var extrovert = 0;
-    var emotion = 0;
-    var toughness = 0;
-    var leadership = 0;
-    var personality = "";
+    var question_id = 1
     var suggestion = "";
+    const TIMEOUT = 50
+    const person = {
+        extrovert: 0,
+        emotion: 0,
+        toughness: 0,
+        leadership: 0,
+        personality: ""
+    }
 </script>
 
 <!-- 외향 내향 -->
@@ -31,11 +30,11 @@
         <div class="col question">개강 후 첫 수업! 옆에 모르는 사람이 앉으면</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q1to2,500); extrovert += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">말을 건다</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q1to2,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">핸드폰만 본다</div>
         </div>
@@ -48,11 +47,11 @@
         <div class="col question">나는 사람들과 같이 있으면</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q2to3,500); extrovert += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">에너지를 얻는다</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q2to3,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">에너지를 소모한다</div>
         </div>
@@ -65,11 +64,11 @@
         <div class="col question">식당에서 주문을 하거나 전화주문을 하게되면</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q3to4,500); extrovert += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">아무렇지 않다</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q3to4,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">어색하고 긴장된다</div>
         </div>
@@ -83,11 +82,11 @@
         <div class="col question">질문4</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q4to5,500); extrovert += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q4to5,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -100,11 +99,11 @@
         <div class="col question">질문5</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q5to6,500); extrovert += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q5to6,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -118,11 +117,11 @@
         <div class="col question">질문6</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q6to7,500); emotion += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q6to7,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -135,11 +134,11 @@
         <div class="col question">질문7</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q7to8,500); emotion += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q7to8,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -152,11 +151,11 @@
         <div class="col question">질문8</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q8to9,500); emotion += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q8to9,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -169,11 +168,11 @@
         <div class="col question">질문9</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q9to10,500); emotion += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q9to10,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -186,11 +185,11 @@
         <div class="col question">질문10</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q10to11,500); emotion += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q10to11,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -204,11 +203,11 @@
         <div class="col question">질문11</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q11to12,500); toughness += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q11to12,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -221,11 +220,11 @@
         <div class="col question">질문12</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q12to13,500); toughness += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q12to13,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -238,11 +237,11 @@
         <div class="col question">질문13</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q13to14,500); toughness += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q13to14,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -255,11 +254,11 @@
         <div class="col question">질문14</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q14to15,500); toughness += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q14to15,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -272,11 +271,11 @@
         <div class="col question">질문15</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q15to16,500); toughness += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q15to16,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -290,11 +289,11 @@
         <div class="col question">질문16</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q16to17,500); leadership += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q16to17,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -307,11 +306,11 @@
         <div class="col question">질문17</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q17to18,500); leadership += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q17to18,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -324,11 +323,11 @@
         <div class="col question">질문18</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q18to19,500); leadership += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q18to19,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -341,11 +340,11 @@
         <div class="col question">질문19</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="setTimeout(q19to20,500); leadership += 1">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="setTimeout(q19to20,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -358,11 +357,11 @@
         <div class="col question">질문20</div>
     </div>
     <div class="row">
-        <div class="col choice" onclick="leadership += 1;assess(); setTimeout(show,500);">
+        <div class="col choice" onclick="handleChoiceTimeout('L', TIMEOUT)">
             <div class="row icon">icon_L</div>
             <div class="row text">text_L</div>
         </div>
-        <div class="col choice" onclick="assess(); setTimeout(show,500)">
+        <div class="col choice" onclick="handleChoiceTimeout('R', TIMEOUT)">
             <div class="row icon">icon_R</div>
             <div class="row text">text_R</div>
         </div>
@@ -370,7 +369,7 @@
     
 </div>
 
-<div class="container last" id="result">
+<div class="container last">
     <div class="row">오케스트라에서 나의 역할은 ...?</div>   
     </div>
        <!-- 지휘자 -->
@@ -435,7 +434,7 @@
         
         <!-- 트럼본 -->
         <div class="container comments" id="trumbone">
-        <div class="col suggestion">트럼본!</div>
+        <div class="col suggestion">트롬본!</div>
         <div class="row">사진</div>
         <div class="row">
             <li>매우 평범한 성격을 가진 사람입니다</li>
@@ -457,6 +456,6 @@
         <!--------------------------------------------------------------------->
 <script src="score.js"></script>
 <script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
