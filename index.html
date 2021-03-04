@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<style>
+    
+
+</style>
+
+<body>
+
+<script>
+    var extrovert = 0;
+    var emotion = 0;
+    var toughness = 0;
+    var leadership = 0;
+    var personality = "";
+    var suggestion = "";
+</script>
+
+<!-- 외향 내향 -->
+<div class="container page" id="Q1_1" style="display: block">
+    <div class= row>
+        <div class="col question">개강 후 첫 수업! 옆에 모르는 사람이 앉으면</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q1to2,500); extrovert += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">말을 건다</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q1to2,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">핸드폰만 본다</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q1_2">
+    <div class= row>
+        <div class="col question">나는 사람들과 같이 있으면</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q2to3,500); extrovert += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">에너지를 얻는다</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q2to3,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">에너지를 소모한다</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q1_3">
+    <div class= row>
+        <div class="col question">식당에서 주문을 하거나 전화주문을 하게되면</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q3to4,500); extrovert += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">아무렇지 않다</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q3to4,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">어색하고 긴장된다</div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="container page" id="Q1_4">
+    <div class= row>
+        <div class="col question">질문4</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q4to5,500); extrovert += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q4to5,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q1_5">
+    <div class= row>
+        <div class="col question">질문5</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q5to6,500); extrovert += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q5to6,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- 이성적 감성적-->
+<div class="container page" id="Q2_1">
+    <div class= row>
+        <div class="col question">질문6</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q6to7,500); emotion += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q6to7,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q2_2">
+    <div class= row>
+        <div class="col question">질문7</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q7to8,500); emotion += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q7to8,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q2_3">
+    <div class= row>
+        <div class="col question">질문8</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q8to9,500); emotion += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q8to9,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q2_4">
+    <div class= row>
+        <div class="col question">질문9</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q9to10,500); emotion += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q9to10,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q2_5">
+    <div class= row>
+        <div class="col question">질문10</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q10to11,500); emotion += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q10to11,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- 강인 섬세-->
+<div class="container page" id="Q3_1">
+    <div class= row>
+        <div class="col question">질문11</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q11to12,500); toughness += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q11to12,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q3_2">
+    <div class= row>
+        <div class="col question">질문12</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q12to13,500); toughness += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q12to13,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q3_3">
+    <div class= row>
+        <div class="col question">질문13</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q13to14,500); toughness += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q13to14,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q3_4">
+    <div class= row>
+        <div class="col question">질문14</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q14to15,500); toughness += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q14to15,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q3_5">
+    <div class= row>
+        <div class="col question">질문15</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q15to16,500); toughness += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q15to16,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- 리더 서포터 -->
+<div class="container page" id="Q4_1">
+    <div class= row>
+        <div class="col question">질문16</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q16to17,500); leadership += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q16to17,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q4_2">
+    <div class= row>
+        <div class="col question">질문17</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q17to18,500); leadership += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q17to18,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q4_3">
+    <div class= row>
+        <div class="col question">질문18</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q18to19,500); leadership += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q18to19,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q4_4">
+    <div class= row>
+        <div class="col question">질문19</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="setTimeout(q19to20,500); leadership += 1">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="setTimeout(q19to20,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container page" id="Q4_5">
+    <div class= row>
+        <div class="col question">질문20</div>
+    </div>
+    <div class="row">
+        <div class="col choice" onclick="leadership += 1;assess(); setTimeout(show,500);">
+            <div class="row icon">icon_L</div>
+            <div class="row text">text_L</div>
+        </div>
+        <div class="col choice" onclick="assess(); setTimeout(show,500)">
+            <div class="row icon">icon_R</div>
+            <div class="row text">text_R</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container last" id="result">
+    <div class="row">오케스트라에서 나의 역할은 ...?</div>   
+    </div>
+       <!-- 지휘자 -->
+        <div class="container comments" id="conductor">
+        <div class="col suggestion">지휘자!</div>
+        <div class="row">사진</div>
+        <div class="row">
+            <li>대외적으로 가장 외향적인 사람이라고 할 수 있습니다</li>
+            <li>어떤 일이나 목표에 있어서 매우 이성적입니다</li>
+            <li>자신이 어떤것을 주도하는 성격이며 많은 사람들을 따르게하는 매력이 있습니다</li>
+            <li>하지만 섬세한 성격을 동시에 가지고 있어서 겉으로는 냉철해보이지만 쉽게 상처받습니다</li>
+        </div>
+        
+        <div class="row">환상의 듀오<br>메인 멜로디 악기들과 호흡이 좋습니다!
+            <li>퍼스트 바이올린</li>
+            <li>오보에</li>
+        </div>
+
+        <div class="row">환장의 듀오<br>내성적인 악기랑은 잘 안맞습니다..
+            <li>세컨드 바이올린</li>
+        </div>
+        </div>
+        
+        <!-- 비올라 -->
+        <div class="container comments" id="viola">
+        <div class="col suggestion">비올라!</div>
+        <div class="row">사진</div>
+        <div class="row">
+            <li>비올라는 굳이 따지자면 내향적이지만 친화력이 강합니다</li>
+            <li>다소 엉뚱한 사람이라는 이미지가 있습니다</li>
+            <li>예상 외로 자기주장이 강한 사람들 입니다</li>
+        </div>
+        
+        <div class="row">환상의 듀오<br>비올라는 같은 비올라끼리 매우 시너지가 좋습니다!
+            <li>비올라</li>
+        </div>
+
+        <div class="row">환장의 듀오<br>비올라에겐 적이 없습니다. 동시에 친구도 없죠..
+        </div>
+        </div>
+        
+        <!-- 플룻 -->
+        <div class="container comments" id="flute">
+        <div class="col suggestion">플룻!</div>
+        <div class="row">사진</div>
+        <div class="row">
+            <li>외향적인 사람들 중에서 가장 감성이 풍부한 성격의 소유자 입니다</li>
+            <li>공감 능력이 매워 뛰어납니다</li>
+            <li>그만큼 마음도 섬세하고 남에게 신경을 많이 씁니다</li>
+        </div>
+        
+        <div class="row">환상의 듀오<br>같은 목관악기들과 좋은 호흡을 자랑합니다!
+            <li>클라리넷</li>
+            <li>오보에</li>
+        </div>
+
+        <div class="row">환장의 듀오<br>뛰어난 공감능력도 너무 개성넘치는 금관악기들 상대로는 상성이 좋지 않습니다..
+            <li>트럼본</li>
+            <li>트럼펫</li>
+        </div>
+        </div>
+        
+        <!-- 트럼본 -->
+        <div class="container comments" id="trumbone">
+        <div class="col suggestion">트럼본!</div>
+        <div class="row">사진</div>
+        <div class="row">
+            <li>매우 평범한 성격을 가진 사람입니다</li>
+            <li>적당히 내성적이지만 적당히 강인하며 모난곳이 없습니다</li>
+            <li>크게 튀는 성격이 아니라서 자연스럽게 주도적인 캐릭터와는 거리가 멀어졌습니다</li>
+            <li>누군가 먼저 주도해주실 바라는 성격입니다</li>
+        </div>
+        
+        <div class="row">환상의 듀오<br>넓은 포용력을 지닌 자상한 사람들과 잘 맞습니다!
+            <li>콘트라베이스</li>
+            <li>타악기</li>
+        </div>
+
+        <div class="row">환장의 듀오<br>소극적인 성격들과는 좋은 성과를 기대할 수 없습니다.. 
+            <li>세컨드 바이올린</li>
+            <li>트럼본</li>
+        </div>
+        </div>
+        <!--------------------------------------------------------------------->
+<script src="score.js"></script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+</body>
+</html>

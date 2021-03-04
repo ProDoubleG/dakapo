@@ -1,0 +1,66 @@
+body
+{
+    font-family: 'Nanum Gothic', nanum;
+}
+.container
+{
+    width: 90%;
+    display: none;
+}
+.page
+{
+    margin-top: 5em;
+}
+    
+.col
+{
+    border: 1px solid black;
+}
+    
+.question
+{
+    height: 3em;
+    font-size: 50%;
+    line-height: 3em;
+    text-align: center;
+}
+   
+
+
+.row .icon
+{
+    height: 15em;
+    line-height: 15em;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.row .text
+{ 
+    margin: auto;
+    height : 8em;
+    line-height: 8em;
+    width:auto;
+    margin: auto;
+} 
+.row .choice:focus, .row .choice:active
+{
+    
+    box-shadow: 0 0 3px #7A1B12;
+    background: rgba(135,235,253, 0.4);
+}
+
+.last
+{
+    margin-top: 2em;
+}
+.comments
+{
+    margin-top: 2em;
+    display ="none";
+}
+
+.suggestion
+{
+    border: 1px solid black;
+    text-align: center; 
+}
