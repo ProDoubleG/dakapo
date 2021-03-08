@@ -12,7 +12,7 @@ ul, li {
 }
 .page
 {
-    margin-top: 5em;
+    margin-top: 2em;
 }
     
 .col
@@ -31,20 +31,36 @@ ul, li {
 
 
 .row .icon
-{
+{    
     height: 15em;
     line-height: 15em;
     text-align: center;
     border-bottom: 1px solid;
+    font-size-adjust: auto; 
 }
 .row .text
 { 
+    
     margin: auto;
-    height : 8em;
-    line-height: 8em;
-    width:auto;
+    height : 10vw;
+    width:50%;
+    
+}
+
+.row .text button
+{
+    height: 2em;
+    text-align: center;
     margin: auto;
-} 
+    font-weight: bold;
+}
+
+button span
+{
+    display: inline;
+    font-size: 2vw;
+    
+}
 .row .choice:focus, .row .choice:active
 {
     

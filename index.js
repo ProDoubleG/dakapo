@@ -62,6 +62,10 @@ const result = {
         id: "#clarinet",
         name: "클라"
     },
+    "EERL": {
+        id: "#horn",
+        name: "호른"
+    },
 }
     
 const questions = {
