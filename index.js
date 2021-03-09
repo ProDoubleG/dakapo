@@ -171,6 +171,7 @@ function QntoQm(n, m) {
 
 
 function handleChoiceTimeout(choice, timeout) {
+    timeout = 300;
     setTimeout(() => handleChoice(choice), timeout)
 }
 

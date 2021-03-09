@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나에게 맞는 악기를 알아보자!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    
+    <link href="prism.css" rel="stylesheet">
+    <link href="ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" >
 </head>
 
 <body>
@@ -31,14 +35,14 @@
     </div>
     <div class="row">
         <div class="col choice">
-            <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>말을 건다</span></button></div>
+            <div class="row icon"><img src="icons/1L.PNG"></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>말을 건다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
-            <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>핸드폰만 본다</span></button></div>
+            <div class="row icon"><img src="icons/1R.PNG"></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>핸드폰만 본다</span></button></div>
         </div>
     </div>
     
@@ -51,13 +55,13 @@
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>에너지를 얻는다</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>에너지를 얻는다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>에너지를 소모한다</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>에너지를 소모한다</span></button></div>
         </div>
     </div>
     
@@ -70,13 +74,13 @@
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>아무렇지 않다</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>아무렇지 않다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>어색하고 긴장된다</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>어색하고 긴장된다</span></button></div>
         </div>
     </div>
 </div>
@@ -84,18 +88,18 @@
 
 <div class="container page" id="Q1_4">
     <div class= row>
-        <div class="col question">질문4</div>
+        <div class="col question">팀플에서 나의 역할은</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>발표하는 사람</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>ppt만드는 사람</span></button></div>
         </div>
     </div>
     
@@ -103,18 +107,18 @@
 
 <div class="container page" id="Q1_5">
     <div class= row>
-        <div class="col question">질문5</div>
+        <div class="col question">수업끝나고 개총이 있으면?</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>무조건 간다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>집이나 간다</span></button></div>
         </div>
     </div>
     
@@ -123,18 +127,18 @@
 <!-- 이성적 감성적-->
 <div class="container page" id="Q2_1">
     <div class= row>
-        <div class="col question">질문6</div>
+        <div class="col question">조원이 팀플에 참여하지 못한 사정을 설명하면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>어쩌라고</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>마음은 이해해한다</span></button></div>
         </div>
     </div>
     
@@ -142,18 +146,18 @@
 
 <div class="container page" id="Q2_2">
     <div class= row>
-        <div class="col question">질문7</div>
+        <div class="col question">친구가 누구와 다툰 이야기를 하면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>잘잘못을 지적한다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>친구편을 든다</span></button></div>
         </div>
     </div>
     
@@ -161,18 +165,18 @@
 
 <div class="container page" id="Q2_3">
     <div class= row>
-        <div class="col question">질문8</div>
+        <div class="col question">타야하는 버스가 옆을 지나가면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>보내주고 다음거 탄다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>곱게 못 보낸다</span></button></div>
         </div>
     </div>
     
@@ -180,36 +184,36 @@
 
 <div class="container page" id="Q2_4">
     <div class= row>
-        <div class="col question">질문9</div>
+        <div class="col question">수강신청에 실패하면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>다른 과목을 알아본다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>휴학절차를 알아본다</span></button></div>
         </div>
     </div>
     
 </div>
 <div class="container page" id="Q2_5">
     <div class= row>
-        <div class="col question">질문10</div>
+        <div class="col question">드라마, 영화를 보면 감정이입을</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>안하는 편이다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>많이 한다</span></button></div>
         </div>
     </div>
     
@@ -218,18 +222,18 @@
 <!-- 강인 섬세-->
 <div class="container page" id="Q3_1">
     <div class= row>
-        <div class="col question">질문11</div>
+        <div class="col question">새해에 계획을 세울 때</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>큰 계획만 세우는 편이다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>자세하게 많이 세운다</span></button></div>
         </div>
     </div>
     
@@ -237,18 +241,18 @@
 
 <div class="container page" id="Q3_2">
     <div class= row>
-        <div class="col question">질문12</div>
+        <div class="col question">시험에서 모르는 문제가 나오면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>건들지 않는다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>뭐라도 적는다</span></button></div>
         </div>
     </div>
     
@@ -256,18 +260,18 @@
 
 <div class="container page" id="Q3_3">
     <div class= row>
-        <div class="col question">질문13</div>
+        <div class="col question">내가 최애 노래에 빠진 이유는?</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>비트가 좋아서</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>멜로디가 좋아서</span></button></div>
         </div>
     </div>
     
@@ -275,18 +279,18 @@
 
 <div class="container page" id="Q3_4">
     <div class= row>
-        <div class="col question">질문14</div>
+        <div class="col question">상대방과 의견충돌이 나면 주로</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>일단 듣는 편이다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>내 주장을 어필한다</span></button></div>
         </div>
     </div>
     
@@ -294,18 +298,18 @@
 
 <div class="container page" id="Q3_5">
     <div class= row>
-        <div class="col question">질문15</div>
+        <div class="col question">누군가와 대화를 할 때</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>남의 신경을 안 쓴다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>남 신경을 많이 쓴다</span></button></div>
         </div>
     </div>
     
@@ -314,18 +318,18 @@
 <!-- 리더 서포터 -->
 <div class="container page" id="Q4_1">
     <div class= row>
-        <div class="col question">질문16</div>
+        <div class="col question">팀플에서 조장을 맡게되면</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>잘할 수 있다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>드랍한다</span></button></div>
         </div>
     </div>
     
@@ -333,18 +337,18 @@
 
 <div class="container page" id="Q4_2">
     <div class= row>
-        <div class="col question">질문17</div>
+        <div class="col question">예전에 반장선거에 출마한적이</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>있다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>없다</span></button></div>
         </div>
     </div>
     
@@ -352,18 +356,18 @@
 
 <div class="container page" id="Q4_3">
     <div class= row>
-        <div class="col question">질문18</div>
+        <div class="col question">여행을 가게되면 주로</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>계획을 세우는 편이다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>스케쥴을 따르는 편이다</span></button></div>
         </div>
     </div>
     
@@ -371,18 +375,18 @@
 
 <div class="container page" id="Q4_4">
     <div class= row>
-        <div class="col question">질문19</div>
+        <div class="col question">누군가 시키는 대로 하는것이</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>불만이다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>차라리 편하다</span></button></div>
         </div>
     </div>
     
@@ -390,18 +394,18 @@
 
 <div class="container page" id="Q4_5">
     <div class= row>
-        <div class="col question">질문20</div>
+        <div class="col question">남들이 내 말에 주목하는 것이</div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_L</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('L', TIMEOUT)"><span>text_L</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('L', TIMEOUT)"><span>당당하고 자신있다</span></button></div>
         </div>
     </div>
     <div class="row">
         <div class="col choice">
             <div class="row icon">icon_R</div>
-            <div class="row text"><button onclick="handleChoiceTimeout('R', TIMEOUT)"><span>text_R</span></button></div>
+            <div class="row text"><button class="waves-effect waves-light btn-small" onclick="handleChoiceTimeout('R', TIMEOUT)"><span>불안하고 쑥스럽다</span></button></div>
         </div>
     </div>
     
@@ -531,7 +535,7 @@
         </div>
         <!--------------------------------------------------------------------->
         <!-- 타악기 -->
-        <div class="container comments" id="precussion">
+        <div class="container comments" id="percussion">
         <div class="col suggestion">타악기!</div>
         <div class="row">사진</div>
         <div class="row">
@@ -776,7 +780,7 @@
         </div>
         <!--------------------------------------------------------------------->
         <!-- 바순 -->
-        <div class="container comments" id="basson">
+        <div class="container comments" id="bassoon">
         <div class="col suggestion">바순!</div>
         <div class="row">사진</div>
         <div class="row">
