@@ -38,7 +38,7 @@ const result = {
         id: "#first_violin",
         name: "퍼바",
     },
-    "ESRS": {
+    "EERS": {
         id: "#piano",
         name: "피아노",
     },
@@ -62,7 +62,7 @@ const result = {
         id: "#clarinet",
         name: "클라"
     },
-    "EERL": {
+    "IERL": {
         id: "#horn",
         name: "호른"
     },
@@ -151,6 +151,10 @@ const questions = {
     },
 }
 
+function start() {
+    document.getElementById("front").style.display = "none"
+    document.getElementById("Q1_1").style.display = "block"
+}
 function questionIdToQueryselector(id) {
     const q_i = Math.ceil(id / 5)
     const q_j = (id - 1) % 5 + 1
