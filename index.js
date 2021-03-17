@@ -204,9 +204,9 @@ function assess(){
     }
     
     if(person.emotion > 2){
-        person.personality += "E"
-    } else{
         person.personality += "R"
+    } else{
+        person.personality += "E"
     }
     
     if(person.toughness > 2){
