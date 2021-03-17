@@ -58,36 +58,38 @@ ul, li {
     height: 5em; 
 }
 
-.dis-ver
+
+.survey-header
 {
-    position: absolute;
-    top: 1em;
-    font-size: 0.7em; 
+    background: #efa6b6;
+    margin-bottom: 2em;
+    border: 3px dotted black; 
 }
 .survey-title
 {
     background: #efa6b6;
-    color : white;
-    margin-top : 3em;
-    text-align: center;
-    height: 8em;
+    color : black;
+    height: 7em;
 }
-.survey-title div
+.title-word
 {
-    font-size: 2em;
+    text-align: center;
+    margin-top 1em; 
+    font-size: 8vw;
+}
+
+.first-line
+{
+    margin-top: 1em; 
 }
 
 .survey-subtitle
 {
-    color:#555555;
+    color:black;
     font-weight: bold;
-    margin: auto;
-    text-align: center;
-    font-size: 3vw;
-    height: 3em;
-    line-height: 3em;
-    margin-bottom: 2em;
-    
+    text-align: right;
+    margin-right: 1em;
+    font-size: 1em;
 }
 
 .wall-of-fame
