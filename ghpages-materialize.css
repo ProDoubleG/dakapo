@@ -3,6 +3,7 @@
 .btn:focus,.btn-large:focus,.btn-small:focus,.btn-floating:focus
 {
     background-color: var(--button-active)
+    color: black;
 }
 .btn,.btn-large,.btn-small
 {
