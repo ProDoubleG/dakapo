@@ -55,27 +55,35 @@ ul, li {
 .start
 {
     width: 100%;
-    height: 5em; 
+    height: 5em;
 }
-
+.start span
+{
+    font-size: 4vh;
+    font-weight: bolder;
+}
 
 .survey-header
 {
+    width: 100%;
+    display: center; 
     background: #efa6b6;
+    margin: auto; 
     margin-bottom: 2em;
     border: 3px dotted black; 
 }
 .survey-title
 {
+    
     background: #efa6b6;
     color : black;
     height: 7em;
+    line-height: 7em;
 }
 .title-word
 {
     text-align: center;
-    margin-top 1em; 
-    font-size: 8vw;
+    font-size: 1em; 
 }
 
 .first-line
@@ -100,17 +108,18 @@ ul, li {
 .source
 {
     position: absolute;
-    bottom: 10vh; 
+    bottom: 10vh;
     font-size: 0.7em; 
 }
 .club-tag
 {
     position: absolute;
     bottom: 1vh;
-    right: 1vh;
+    
 }
 .choice
 {
+    height: 40vh; 
     border-radius: 0.5em;
     background-color: #F6F6F6;
     margin-bottom: 1em;
@@ -129,10 +138,11 @@ ul, li {
 }
 .row .icon
 {   
+    margin: auto;
     padding: 0;
-    height: 15em;
+    height: 35vh;
+    width: 100%; 
     line-height: 15em;
-    text-align: center;
     
     font-size-adjust: auto; 
 }
@@ -151,14 +161,13 @@ ul, li {
     text-align: center;
     margin: auto;
     font-weight: bold;
-    bottom: 1em; 
 }
 
 button span
 {
     min-height: 3vw;
     display: inline;
-    font-size: 3vw;
+    font-size: 1em;
     color: #404040;
     
 }
@@ -196,7 +205,7 @@ button span
 }
 img
 {
-    height: 15em;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0; 
@@ -264,7 +273,7 @@ img
     padding: 0;
     margin: auto;
     text-align: center;
-    width: 60%;
+    width: 85%;
     margin-bottom: 1em;
 }
 .good-partener li
@@ -272,7 +281,7 @@ img
     font-size: 1.5em;  
     /*background-color: var(--list);*/
     background-color: var(--category);
-    color: rgba(244, 215, 131,0.8);
+    color: #fff9b0;
     /*border: 1px solid #333333;*/
     text-align: center;
     
@@ -282,7 +291,7 @@ img
 .bad-partener
 {
     /*background-color: var(--category);*/
-    background-color:firebrick;
+    background-color:#b68973;
     border: 3px dotted black;
 }
 
@@ -305,17 +314,18 @@ img
     padding: 0;
     margin: auto;
     text-align: center;
-    width: 60%;
+    width: 85%;
     margin-bottom: 1em;
 }
 .bad-partener li
 {
     font-size: 1.5em;  
     /*background-color: var(--list);*/
-    background-color: red;
-    color: rgba(244, 215, 131,0.8);
+    background-color: #ec4646;
+    color: #fff9b0;
     /*border: 1px solid #333333;*/
     text-align: center;
+    
 }
 .logo-img
 {
@@ -324,6 +334,21 @@ img
     right: 0;
     width: 30%;
     height: 1.5em;
-    margin-top: 2em;
-    margin-bottom: 1em;
+}
+.logo-div
+{
+    margin-top: 1em; 
+}
+@media screen and (min-width: 800px){
+    .row .icon
+{   
+    margin: auto;
+    padding: 0;
+    height: 35vh;
+    width: 50%; 
+    line-height: 15em;
+    
+    font-size-adjust: auto; 
+}
+    
 }
